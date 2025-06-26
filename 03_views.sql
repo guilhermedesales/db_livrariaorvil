@@ -1,6 +1,6 @@
-USE db_livrariaorvil;
+use db_livrariaorvil;
 
--- dados dos livros com autores e editoras
+-- dados dos livros com autores e editoras ------------------------------------------------------------
 CREATE VIEW vw_livros_autores_editoras AS
 SELECT
     l.id_livro,
@@ -17,7 +17,7 @@ JOIN autor a ON la.id_autor = a.id_autor;
 
 select * from vw_livros_autores_editoras;
 
--- resumo de vendas com o nome dos clientes
+-- resumo de vendas com o nome dos clientes ---------------------------------------------------------------
 CREATE VIEW vw_vendas_resumidas AS
 SELECT
     v.id_venda,
@@ -29,7 +29,7 @@ JOIN cliente c ON v.id_cliente = c.id_cliente;
 
 select * from vw_vendas_resumidas;
 
--- livros com estoque abaixo ou igual a 10
+-- livros com estoque abaixo ou igual a 10 --------------------------------------------------------------
 CREATE VIEW vw_estoque_baixo AS
 SELECT
     id_livro,
