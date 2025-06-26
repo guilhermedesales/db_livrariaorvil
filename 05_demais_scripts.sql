@@ -13,7 +13,7 @@ INSERT INTO cliente (nome, email) VALUES ('João da Silva', 'joaoSilva@email.com
 INSERT INTO venda (id_cliente, data, valor_total) 
 VALUES (0, '2025-06-26', 50.00);
 
-COMMIT; -- salva no banco so se não ocorrer erros em nenhuma parte da transaction
+COMMIT; -- salva no banco so se não ocorrer erros em nenhuma parte da transaction ---------------------
 
 -- editoras com mais de 1 livro e com preço medio acima de 35 -------------------------------------------
 SELECT 
